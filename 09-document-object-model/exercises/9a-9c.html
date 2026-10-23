@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9a-9c</title>
+  </head>
+  <body>
+    <button>9a</button>  
+    <button class="js-second-button">9b</button>
+
+    <div style="margin-top: 20px;">
+      <button onclick="
+        playGame('heads');
+      ">
+        heads
+      </button>
+
+      <button onclick="
+        playGame('tails');
+      ">
+        tails
+      </button>
+
+      <p class="js-choice"></p>
+    </div>
+    
+    <script>
+      console.log(document.querySelector('button'));
+
+      document.querySelector('.js-second-button')
+        .innerHTML = '9b done!';
+      
+      function playGame(choice) {
+        const paragraphElement = document.querySelector('.js-choice');
+        paragraphElement.innerHTML = `You chose: ${choice}`;
+      }
+
+    </script>
+  </body>
+</html>
