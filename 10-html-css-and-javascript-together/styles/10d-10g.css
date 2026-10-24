@@ -1,0 +1,14 @@
+.genre-button {
+  background-color: rgb(230, 230, 230);
+  font-size: 16px;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.is-toggled {
+  background-color: black;
+  color: white;
+}
